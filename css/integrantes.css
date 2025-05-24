@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+  background-color: #e74c3c;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 4px solid #c0392b;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  max-height: 50px;
+  height: auto;
+}
+
+.pesquisa {
+  display: flex;
+  max-width: 300px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.pesquisa input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px 0 0 3px;
+}
+
+.pesquisa botao {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background: #ccc;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background: #EE4937;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+nav a,
+.footer-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #912920;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    flex: 1;
+    flex-grow: 1;
+}
+
+main h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.imagens {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.i {
+    flex: 1 1 300px;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+}
+
+.i img {
+    width: 75%;
+    height: 85%;
+    border-radius: 5px;
+    border: black solid 2px;
+    margin: 10px;
+}
+
+#logoLinkedin {
+    border: none;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#logoGithub {
+    border: none;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.pedro {
+    background: linear-gradient(to right, #fbb03b, #E91B47);
+    padding: 30px;
+    padding-bottom: 40px;
+}
+
+.natan {
+    background: linear-gradient(to right, #E91B47, #fbb03b);
+    padding: 30px;
+    padding-bottom: 40px;
+}
+
+footer {
+    background-color: #e7302e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Breakpoints */
+@media (max-width: 600px) {
+    .buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .imagens {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .i p {
+        font-size: 14px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .pesquisa {
+        justify-content: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media (min-width: 600px) {
+    .buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .imagens {
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+
+@media (min-width: 768px) {
+    .pesquisa {
+        max-width: 400px;
+    }
+    .button {
+        font-size: 18px;
+    }
+    nav a {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logos {
+        margin-bottom: 0;
+    }
+    .buttons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    nav {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1300px) {
+    .buttons {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}

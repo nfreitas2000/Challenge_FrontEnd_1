@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+header {
+  background-color: #e74c3c;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 4px solid #c0392b;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  max-height: 50px;
+  height: auto;
+}
+
+.pesquisa {
+  display: flex;
+  max-width: 300px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.pesquisa input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px 0 0 3px;
+}
+
+.pesquisa button {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background: #ccc;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background: #EE4937;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+nav a,
+.footer-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #912920;
+}
+
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+main h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+main p {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.apoio-videos h2,
+.documentos h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.video-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+.video-card {
+  flex: 1 1 300px;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.video1 {
+  background: linear-gradient(to right, #fbb03b, #E91B47);
+}
+
+.video2 {
+  background: linear-gradient(to right, #E91B47, #a11634, #E91B47);
+}
+
+.video3 {
+  background: linear-gradient(to right, #E91B47, #fbb03b);
+}
+
+.documentos {
+  margin-top: 50px;
+}
+
+.documentos p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.documentos ul {
+  list-style: none;
+  text-align: center;
+}
+
+.documentos li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.documentos a {
+  text-decoration: none;
+}
+
+.botao-acessibilidade, .botao-assistente {
+  position: fixed;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background: linear-gradient(to bottom right, #3b82f6, #10b981); 
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.botao-assistente {
+  bottom: 20px;
+  background: linear-gradient(to bottom right, #f87171, #fb923c);
+}
+
+.botao-acessibilidade {
+  bottom: 90px;
+}
+
+footer {
+  background-color: #e7302e;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Breakpoints */
+@media (max-width: 600px) {
+  .buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .video-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-card p {
+    font-size: 14px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .pesquisa {
+    justify-content: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* Breakpoints */
+@media (min-width: 600px) {
+  .buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .video-grid {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+@media (min-width: 768px) {
+  .pesquisa {
+    max-width: 400px;
+  }
+  .button {
+    font-size: 18px;
+  }
+  nav a {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logos {
+    margin-bottom: 0;
+  }
+  .buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  nav {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1300px) {
+  .buttons {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}

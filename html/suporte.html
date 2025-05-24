@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fale Conosco</title>
+  <link rel="stylesheet" href="../css/style_sup.css">
+  <script src="../js/formulario.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo-cert">
+      <img src="../image/logo_imrea.png" alt="IMREA" />
+      <img src="../image/carf_selo.png" alt="Acreditada" class="cert"/>
+    </div>
+    <div class="pesquisa">
+      <input type="text" placeholder="Pesquisar..." />
+      <button>🔍</button>
+    </div>
+  </header>
+
+  <nav>
+    <a href="../index.html">Início</a> |
+    <a href="guias.html">Guias de apoio</a> |
+    <a href="faq.html">FAQ</a> |
+    <a href="suporte.html">Fale conosco</a> |
+    <a href="integrantes.html">Integrantes</a>
+  </nav>
+
+  <main>
+    <h1>Fale conosco</h1>
+    <p>Aqui, você pode entrar em contato direto com nossa equipe de suporte...</p>
+
+    <form class="formulario" action="enviar.html" method="get">
+      <label for="fnome">Nome</label>
+      <input type="text" id="fnome" placeholder="Ex: José Carvalho de Oliveira">
+
+      <label for="femail">Email</label>
+      <input type="email" id="femail" placeholder="Ex: guidedevs@gmail.com">
+
+      <label for="ftelefone">Telefone</label>
+      <input type="tel" id="ftelefone" placeholder="Ex: (11) 99999-9999">
+
+      <label for="ftipo">Eu sou...</label>
+      <input type="text" id="ftipo" placeholder="Ex: Paciente / Cuidador / Profissional de Saúde">
+
+      <label for="fmensagem">Mensagem</label>
+      <textarea id="fmensagem" rows="5" placeholder="Ex: Tentei de todos os modos..."></textarea>
+
+      <div id="click_botao">
+        <button type="submit" id="envia_botao">Enviar</button>
+      </div>
+    </form>
+
+    <button class="botao_acessibilidade">♿</button>
+    <button class="botao_assistente">🤖</button>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="faq.html">PERGUNTAS FREQUENTES</a> |
+      <a href="suporte.html">FALE CONOSCO</a> |
+      <a href="integrantes.html">INTEGRANTES</a>
+    </div>
+    <p>Tele+Fácil | Desenvolvido por GuideDevs</p>
+  </footer>
+</body>
+</html>

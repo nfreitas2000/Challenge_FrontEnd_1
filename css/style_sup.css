@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+header {
+  background-color: #e74c3c;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 4px solid #c0392b;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  max-height: 50px;
+  height: auto;
+}
+
+.pesquisa {
+  display: flex;
+  max-width: 300px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.pesquisa input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px 0 0 3px;
+}
+
+.pesquisa button {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background: #ccc;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background: #EE4937;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+nav a,
+.footer-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #912920;
+}
+
+main {
+  padding: 30px 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+main p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.formulario {
+  border: 5px solid #e74c3c;
+  border-radius: 20px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #fff;
+}
+
+.formulario label {
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#envia_botao {
+  background: linear-gradient(to right, #fbb03b, #E91B47);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.botao_acessibilidade, .botao_assistente {
+  position: fixed;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background: linear-gradient(to bottom right, #3b82f6, #10b981); 
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.botao_assistente {
+  bottom: 20px;
+  background: linear-gradient(to bottom right, #f87171, #fb923c);
+}
+
+.botao_acessibilidade {
+  bottom: 90px;
+}
+
+footer {
+  background-color: #e7302e;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Breakpoints */
+@media (min-width: 600px) {
+  .button {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pesquisa {
+    max-width: 400px;
+  }
+  .button {
+    font-size: 18px;
+  }
+  nav a {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logos {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1300px) {
+  .buttons {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
