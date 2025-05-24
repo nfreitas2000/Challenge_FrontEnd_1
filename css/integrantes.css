@@ -93,7 +93,6 @@ main {
     max-width: 1000px;
     margin: 30px auto;
     padding: 0 20px;
-    flex: 1;
     flex-grow: 1;
 }
 
@@ -105,7 +104,7 @@ main h1 {
 
 main p {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 16px;
 }
 
@@ -115,11 +114,12 @@ main p {
     justify-content: center;
     flex-wrap: wrap;
     padding: 0 10px;
+    margin-bottom: 20px;
 }
 
 .i {
     flex: 1 1 300px;
-    max-width: 350px;
+    max-width: 400px;
     padding: 20px;
     border-radius: 12px;
     color: white;
@@ -127,11 +127,11 @@ main p {
 }
 
 .i img {
-    width: 75%;
-    height: 85%;
+    width: 70%;
+    height: 75%;
     border-radius: 5px;
     border: black solid 2px;
-    margin: 10px;
+    margin-bottom: 20px;
 }
 
 #logoLinkedin {
@@ -148,14 +148,17 @@ main p {
 
 .pedro {
     background: linear-gradient(to right, #fbb03b, #E91B47);
-    padding: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
 }
 
 .natan {
     background: linear-gradient(to right, #E91B47, #fbb03b);
-    padding: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
 }
 
 footer {
@@ -163,7 +166,6 @@ footer {
     color: white;
     padding: 20px 0;
     text-align: center;
-    margin-top: 40px;
 }
 
 footer a {
