@@ -93,7 +93,7 @@ main p {
   margin-bottom: 30px;
 }
 
-.formulario {
+#formulario {
   border: 5px solid #e74c3c;
   border-radius: 20px;
   padding: 30px 20px;
@@ -103,12 +103,12 @@ main p {
   background: #fff;
 }
 
-.formulario label {
+#formulario label {
   font-weight: bold;
 }
 
-.formulario input,
-.formulario textarea {
+#formulario input,
+#formulario textarea {
   padding: 10px;
   font-size: 14px;
   border: 1px solid #999;

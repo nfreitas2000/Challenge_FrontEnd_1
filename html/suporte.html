@@ -29,27 +29,25 @@
 
   <main>
     <h1>Fale conosco</h1>
-    <p>Aqui, você pode entrar em contato direto com nossa equipe de suporte...</p>
+    <p>Aqui, você pode entrar em contato direto com nossa equipe de suporte!</p>
 
-    <form class="formulario" action="enviar.html" method="get">
+    <form id="formulario" action="enviar.html" method="get">
       <label for="fnome">Nome</label>
-      <input type="text" id="fnome" placeholder="Ex: José Carvalho de Oliveira">
+      <input type="text" id="fnome" name="nome" placeholder="Ex: José Carvalho de Oliveira">
 
       <label for="femail">Email</label>
-      <input type="email" id="femail" placeholder="Ex: guidedevs@gmail.com">
+      <input type="email" id="femail" name="email" placeholder="Ex: guidedevs@gmail.com">
 
       <label for="ftelefone">Telefone</label>
-      <input type="tel" id="ftelefone" placeholder="Ex: (11) 99999-9999">
+      <input type="number" id="ftelefone" name="telefone" placeholder="Ex: (11) 99999-9999">
 
       <label for="ftipo">Eu sou...</label>
-      <input type="text" id="ftipo" placeholder="Ex: Paciente / Cuidador / Profissional de Saúde">
+      <input type="text" id="ftipo" name="identificacao" placeholder="Ex: Paciente / Cuidador / Profissional de Saúde">
 
       <label for="fmensagem">Mensagem</label>
-      <textarea id="fmensagem" rows="5" placeholder="Ex: Tentei de todos os modos..."></textarea>
+      <textarea type="text" id="fmensagem" rows="5" name="mensagem" placeholder="Ex: Tentei de todos os modos..."></textarea>
 
-      <div id="click_botao">
-        <button type="submit" id="envia_botao">Enviar</button>
-      </div>
+        <button type="button" id="envia_botao">Enviar</button>
     </form>
 
     <button class="botao_acessibilidade">♿</button>
@@ -61,8 +59,9 @@
       <a href="faq.html">PERGUNTAS FREQUENTES</a> |
       <a href="suporte.html">FALE CONOSCO</a> |
       <a href="integrantes.html">INTEGRANTES</a>
+      <p>Tele+Fácil | Desenvolvido por GuideDevs</p>
+
     </div>
-    <p>Tele+Fácil | Desenvolvido por GuideDevs</p>
   </footer>
 </body>
 </html>

@@ -1,5 +1,6 @@
-let botaoEnviar = document.querySelector("#click_botao")
+let botaoEnviar = document.querySelector("#envia_botao")
 
+let formulario = document.querySelector("#formulario")
 let campoNome = document.querySelector("#fnome")
 let campoEmail = document.querySelector("#femail")
 let campoTelefone = document.querySelector("#ftelefone")
@@ -19,5 +20,7 @@ function validarFormulario() {
     alert("O campo de identificação não foi preenchido!")
   } else if (campoMensagem.value == "") {
     alert("O campo de mensagem não foi preenchido!")
+  } else {
+    formulario.submit()
   }
 }
