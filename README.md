@@ -7,7 +7,7 @@ próprio instituto.
 **Estrutura de pastas e arquivos ----------------------------------------------------------------------------------------------**
 
 + index.html: Contém a página inicial do projeto
-+ css: pasta que contém os arquivos .css: integrantes.css / style_faq.css / style_guias.css / style_sup.css / style.css
++ css: pasta que contém os arquivos .css: integrantes.css / style_enviar.css / style_faq.css / style_guias.css / style_sup.css / style.css
 + html: pasta que contém os arquivos .html (com exceção do index): enviar.html / faq.html / guias.html / integrantes.html / suporte.html
 + image: pasta que contém os arquivos de imagem do projeto: carf_selo.png / foto_natan.png / foto_pedro.jpg / LinkedIn_logon_initials.png / logo_imread.png / logoGithub.png
 + js: pasta que comtém o arquivo javascript referente ao formulário: formulario.js
